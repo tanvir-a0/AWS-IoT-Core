@@ -51,6 +51,7 @@ This guide walks you through setting up a real-time dashboard for your ESP32 sen
    * Select `CloudWatchFullAccess` (for testing)
    
    ![Creating IAM Role](./assets/creating_iam.png)
+   ![Creating IAM Role)(./assets/permission_in_iam.png)
    
    * Click "Next"
 
@@ -71,7 +72,7 @@ This guide walks you through setting up a real-time dashboard for your ESP32 sen
    }
    ```
 
-4. **Name and Create Role**
+5. **Name and Create Role**
    * **Role name**: `IoTRuleCloudWatchRole`
    * **Description**: "Allows IoT Rules to publish metrics to CloudWatch"
    * Click "Create role"
