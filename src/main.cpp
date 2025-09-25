@@ -10,7 +10,7 @@ void messageHandler(char* topic, byte* payload, unsigned int length);
 
 
 #include "DHT.h"
-#define DHTPIN 5     // Digital pin connected to the DHT sensor
+#define DHTPIN 15    // Digital pin connected to the DHT sensor
 #define DHTTYPE DHT11   // DHT 11
 
 #define AWS_IOT_PUBLISH_TOPIC   "esp32/pub"

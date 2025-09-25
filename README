@@ -1,0 +1,10 @@
+Tutorial is here (I just started the IoT Core Following this video): 
+https://www.youtube.com/watch?v=idf-gGXvIu4
+These are the problem I faced: 
+{Thank you it helped me a lot. If you have any problem about the arn part, just use it like this:
+arn:aws:iot:<region>:<account-id>:<resource-type>/<resource-name>
+Also make sure to type the link properly in the policy section. (I struggled a lot due to typing mistake here)}
+
+![alt text](image-1.png)
+![alt text](image.png)
+
