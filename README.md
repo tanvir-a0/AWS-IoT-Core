@@ -6,7 +6,7 @@ I followed this tutorial: [AWS IoT Core Beginner Tutorial](https://www.youtube.c
 
 - **ARN format confusion**  
   If you have any problem with the ARN part, use it like this:  
-  arn:aws:iot:<region>:<account-id>:<resource-type>/<resource-name>
+  arn:aws:iot:&lt;region&gt;:&lt;account-id&gt;:&lt;resource-type&gt;/&lt;resource-name&gt;
 
 - **Policy link issues**  
   Make sure to type the link properly in the policy section.  
