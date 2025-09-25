@@ -1,9 +1,17 @@
-Tutorial is here (I just started the IoT Core Following this video): 
-https://www.youtube.com/watch?v=idf-gGXvIu4
-These are the problem I faced: 
-{If you have any problem about the arn part, just use it like this:
-arn:aws:iot:<region>:<account-id>:<resource-type>/<resource-name>
-Also make sure to type the link properly in the policy section. (I struggled a lot due to typing mistake here)}
+# AWS IoT Core Setup Notes
+
+I followed this tutorial: [AWS IoT Core Beginner Tutorial](https://www.youtube.com/watch?v=idf-gGXvIu4)
+
+## Problems I Faced
+
+- **ARN format confusion**  
+  If you have any problem with the ARN part, use it like this:  
+  arn:aws:iot:<region>:<account-id>:<resource-type>/<resource-name>
+
+- **Policy link issues**  
+  Make sure to type the link properly in the policy section.  
+  I struggled a lot because of small typing mistakes here.
+
 
 
 
