@@ -93,12 +93,22 @@ void messageHandler(char* topic, byte* payload, unsigned int length)
 void setup()
 {
   Serial.begin(115200);
+
+  // ADD THIS LINE - Disable WiFi sleep
+  WiFi.setSleep(false);
+
   connectAWS();
   dht.begin();
 }
 
 void loop()
 {
+  // ADD CONNECTION CHECK
+  if (!client.connected()) {
+      Serial.println("MQTT disconnected, reconnecting...");
+      connectAWS();
+  }
+
   h = dht.readHumidity();
   t = dht.readTemperature();
 
@@ -117,5 +127,5 @@ void loop()
 
   publishMessage();
   client.loop();
-  delay(1000);
+  delay(5000);
 }
