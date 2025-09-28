@@ -223,3 +223,22 @@ SELECT temperature, humidity FROM 'esp32/pub'
 * **No data**: Check IoT Rule execution metrics
 * **Delays**: Normal 1-3 minute delay expected
 * **Permissions**: Verify IAM role has CloudWatch permissions
+
+<br>
+## LED Status Indicators
+
+The built-in LED provides visual feedback about the connection status:
+
+| Blink Pattern | Interval | Status | Description |
+|---------------|----------|--------|-------------|
+| 🔴 **Very Fast Blink** | 100ms | ❌ Critical Error | System error - check serial monitor for details |
+| 🟡 **Fast Blink** | 200ms | 📶 WiFi Connecting | Check your WiFi credentials and network |
+| 🟠 **Medium Blink** | 500ms | ☁️ AWS IoT Connecting | MQTT/AWS IoT connection issue |
+| 🟢 **Slow Blink** | 2000ms | ✅ Connected | Everything working perfectly! |
+
+### Troubleshooting Guide
+
+- **Very Fast Blink (100ms)**: Critical error state - check serial monitor for specific error messages
+- **Fast Blink (200ms)**: WiFi connection issues - verify SSID and password in `secrets.h`
+- **Medium Blink (500ms)**: AWS IoT connection problems - check certificates, endpoint, and thing name
+- **Slow Blink (2000ms)**: All systems operational - data being published successfully
