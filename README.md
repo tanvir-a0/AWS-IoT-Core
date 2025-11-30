@@ -242,3 +242,7 @@ The built-in LED provides visual feedback about the connection status:
 - **Fast Blink (200ms)**: WiFi connection issues - verify SSID and password in `secrets.h`
 - **Medium Blink (500ms)**: AWS IoT connection problems - check certificates, endpoint, and thing name
 - **Slow Blink (2000ms)**: All systems operational - data being published successfully
+
+
+# Setting Up DynamoDB
+So to do this, I followed [https://docs.aws.amazon.com/iot/latest/developerguide/iot-ddb-rule.html](This tutorial)
