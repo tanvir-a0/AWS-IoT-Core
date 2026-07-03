@@ -245,4 +245,9 @@ The built-in LED provides visual feedback about the connection status:
 
 
 # Setting Up DynamoDB
-So to do this, I followed [https://docs.aws.amazon.com/iot/latest/developerguide/iot-ddb-rule.html](This tutorial)
+So to do this, I followed [this docs](https://docs.aws.amazon.com/iot/latest/developerguide/iot-ddb-rule.html) from official AWS IoT Core and it just worked. 
+
+Here are couple of images of the trial: 
+![alt text](image-2.png)
+![alt text](image-3.png)
+![alt text](image-4.png)
